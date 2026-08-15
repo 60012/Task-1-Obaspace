@@ -1,34 +1,79 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8" />
-    <title>Obasphere</title>
-</head>
-<!-- background color and  text color for the entire page here -->
-<body style="background-color: #f4f7fb; color: #333333; font-family: sans-serif; margin: 0; padding: 0;">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Register Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-    <header style="background-color: blue; color: white; padding: 1px; text-align: left; font-size: 1.5rem;">
-        <h1>Obasphere</h1>
+  <body>
+    <header>
+      <h1>Obasphere</h1>
     </header>
 
-    <nav style="background-color: #f0f0f0; padding: 15px; text-align: center;">
-            <p><a href="register.html">Register</a></p>
-             <p><a href="login.html">Login</a></p>
-    </nav>
-    
-     <br>
-     <br>
-    <br>  <br><br>
-     <br> <br>   <br>
-     <br>  <br> <br>
-    <br><br>    <br>
-     <br>  <br> <br>
-    <br><br>  <br>
-    
+    <main>
+      <section class="card">
+        <h2>Register</h2>
 
-   <footer style="background-color: #222222; color: #bbbbbb; text-align: center; padding: 15px; font-size: 0.9rem;">
-        <p>&copy; 2026 My Web Page. All rights reserved.</p>
+        <form action="login.html" method="post">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Choose a username"
+              autocomplete="username"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="name@company.com"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              autocomplete="new-password"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="confirm">Confirm Password</label>
+            <input
+              type="password"
+              id="confirm"
+              name="confirm"
+              placeholder="Confirm your password"
+              autocomplete="new-password"
+              required
+            />
+          </div>
+
+          <button type="submit">Create Account</button>
+        </form>
+
+        <p>Already have an account? <a href="login.html">Login</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 My Web Page. All rights reserved.</p>
     </footer>
-
-</body>
+  </body>
 </html>

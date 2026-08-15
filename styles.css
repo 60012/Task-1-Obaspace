@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f1e8;
+  color: #2f332b;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+footer {
+  background-color: #6f7665;
+  color: #fffaf0;
+  padding: 16px 24px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+  background-image: linear-gradient(
+      rgba(245, 241, 232, 0.48),
+      rgba(245, 241, 232, 0.48)
+    ),
+    url("assets/login-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(255, 252, 244, 0.92);
+  padding: 24px;
+  border: 1px solid #d7cfbf;
+  border-radius: 6px;
+  box-shadow: 0 12px 30px rgba(70, 74, 64, 0.16);
+}
+
+.card h2 {
+  margin-top: 0;
+  text-transform: capitalize;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #cfc6b6;
+  border-radius: 4px;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  gap: 12px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: normal;
+}
+
+.checkbox-container input {
+  width: auto;
+}
+
+a {
+  color: #4f5c44;
+}
+
+button {
+  width: 100%;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #6f7665;
+  color: #fffaf0;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5d6554;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
+}

@@ -1,27 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Login Page</title>
-  <style>
-    body { font-family: Arial, sans-serif; padding:20px; }
-    .card { max-width:400px; margin:20px auto; padding:16px; border:1px solid #ccc; border-radius:6px; }
-    input { width:100%; padding:8px; margin:6px 0; box-sizing:border-box; }
-    button { padding:8px 12px; }
-  </style>
-</head>
-<body>
-  <div class="card">
-    <h1>sign in</h1>
-    <form action="index.html" method="get">
-      <input type="text" name="username" placeholder="Username"><br>
-      <input type="text" name="password" placeholder="Password"><br>
-      <label><input type="checkbox" name="remember"> Remember me</label><br>
-      <button>Login</button>
-    </form>
-    <p>Don't have an account? <a href="register.html">Register</a></p>
-  
-  </div>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Obasphere</h1>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Sign in</h2>
+
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="name@company.com"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              autocomplete="current-password"
+              required
+            />
+          </div>
+
+          <div class="form-options">
+            <label class="checkbox-container" for="remember">
+              <input type="checkbox" name="remember" id="remember" />
+              <span>Remember me</span>
+            </label>
+
+            <a href="#">Forgot password?</a>
+          </div>
+
+          <button type="submit">Sign In</button>
+        </form>
+
+        <p>Don't have an account? <a href="register.html">Register</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 My Web Page. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
