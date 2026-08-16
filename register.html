@@ -3,66 +3,105 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Register Page</title>
-    
+    <meta name="description" content="Create an Obasphere account." />
+    <title>Obasphere | Sign Up</title>
   </head>
-
-  <body>
+  <body background="login-bg.jpg">
     <header>
-      <h1>Obasphere</h1>
+      <table width="100%" cellpadding="4" cellspacing="0" border="0">
+        <tr>
+          <td align="left" valign="top">
+            <nav aria-label="Site navigation">
+              <p><a href="index.html">Obasphere</a></p>
+            </nav>
+          </td>
+          <td align="right" valign="top">
+            <nav aria-label="Account navigation">
+              <p>
+                <a href="#contact-form">Contact Us</a> |
+                <a href="register.html">Sign Up</a> |
+                <a href="login.html">Sign In</a>
+              </p>
+            </nav>
+          </td>
+        </tr>
+      </table>
     </header>
 
     <main>
-      <section class="card">
-        <h2>Register</h2>
+      <section aria-labelledby="sign-up-title">
+        <h1 id="sign-up-title">Sign Up</h1>
+        <p>Create your Obasphere account.</p>
+        <p>Already have an account? <a href="login.html">Sign in</a>.</p>
 
-        
-          <div class="form-group">
-            <label for="fullName">Full Name</label>
-            <input
-              type="text"
-              id="fullName"
-              name="fullName"
-              placeholder="Jackson Scavo"
-              autocomplete="name"
-              required
-            />
-          </div>
+        <form method="post" autocomplete="on">
+          <fieldset>
+            <legend>Create Your Obasphere account.</legend>
 
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Jackson@example.com"
-              autocomplete="email"
-              required
-            />
-          </div>
+            <p>
+              <label for="full-name">Full Name</label><br />
+              <input
+                type="text"
+                id="full-name"
+                name="name"
+                autocomplete="name"
+                minlength="2"
+                required
+              />
+            </p>
 
-          <div class="form-group">
-            <label for="password">Password</label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              placeholder="At least 8 characters"
-              autocomplete="new-password"
-              minlength="8"
-              required
-            />
-          </div>
+            <p>
+              <label for="register-email">Email Address</label><br />
+              <input
+                type="email"
+                id="register-email"
+                name="email"
+                autocomplete="email"
+                inputmode="email"
+                required
+              />
+            </p>
 
-          <button type="submit">Create Account</button>
+            <p>
+              <label for="phone">Phone Number</label><br />
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                autocomplete="tel"
+                inputmode="tel"
+              />
+            </p>
+
+            <p>
+              <label for="register-password">Password</label><br />
+              <input
+                type="password"
+                id="register-password"
+                name="password"
+                autocomplete="new-password"
+                minlength="8"
+                required
+              />
+            </p>
+
+            <p>
+              <input
+                type="checkbox"
+                id="terms"
+                name="terms"
+                value="accepted"
+                required
+              />
+              <label for="terms">I agree to the Obasphere terms.</label>
+            </p>
+
+            <p>
+              <button type="submit">Create Account</button>
+            </p>
+          </fieldset>
         </form>
-
-        <p>Already have an account? <a href="login.html">Login</a></p>
       </section>
     </main>
-
-    <footer>
-      <p> 2026 obasphere.</p>
-    </footer>
   </body>
 </html>
