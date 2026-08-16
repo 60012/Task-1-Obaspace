@@ -3,76 +3,75 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Register Page</title>
+    <title>Obasphere | Get in Touch</title>
   </head>
-
-  <body>
+  <body background="login-bg.jpg">
     <header>
-      <h1>Obasphere</h1>
+      <table width="100%" cellpadding="4" cellspacing="0" border="0">
+        <tr>
+          <td align="left" valign="top">
+            <nav aria-label="Site navigation">
+              <p><a href="index.html">Obasphere</a></p>
+            </nav>
+          </td>
+          <td align="right" valign="top">
+            <nav aria-label="Account navigation">
+              <p>
+                <a href="#contact-form">Contact Us</a> |
+                <a href="register.html">Sign Up</a> |
+                <a href="login.html">Sign In</a>
+              </p>
+            </nav>
+          </td>
+        </tr>
+      </table>
     </header>
 
-    <main>
-      <section class="card">
-        <h2>Register</h2>
+    <section id="contact-form" aria-labelledby="contact-form-title">
+      <h2 id="contact-form-title">Contact Form</h2>
+      <form method="post" autocomplete="on">
+        <fieldset>
+          <legend>Send a Message</legend>
 
-        <form action="login.html" method="post">
-          <div class="form-group">
-            <label for="username">Username</label>
+          <p>
+            <label for="contact-name">Full Name</label><br />
             <input
               type="text"
-              id="username"
-              name="username"
-              placeholder="Choose a username"
-              autocomplete="username"
+              id="contact-name"
+              name="name"
+              autocomplete="name"
               required
             />
-          </div>
+          </p>
 
-          <div class="form-group">
-            <label for="email">Email Address</label>
+          <p>
+            <label for="contact-email">Email Address</label><br />
             <input
               type="email"
-              id="email"
+              id="contact-email"
               name="email"
-              placeholder="name@company.com"
               autocomplete="email"
               required
             />
-          </div>
+          </p>
 
-          <div class="form-group">
-            <label for="password">Password</label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              placeholder="Enter your password"
-              autocomplete="new-password"
+          <p>
+            <label for="contact-message">Message</label><br />
+            <textarea
+              id="contact-message"
+              name="message"
+              rows="6"
+              cols="32"
+              minlength="10"
               required
-            />
-          </div>
+            ></textarea>
+          </p>
 
-          <div class="form-group">
-            <label for="confirm">Confirm Password</label>
-            <input
-              type="password"
-              id="confirm"
-              name="confirm"
-              placeholder="Confirm your password"
-              autocomplete="new-password"
-              required
-            />
-          </div>
-
-          <button type="submit">Create Account</button>
-        </form>
-
-        <p>Already have an account? <a href="login.html">Login</a></p>
-      </section>
-    </main>
-
-    <footer>
-      <p>2026 obasphere.</p>
-    </footer>
+          <p>
+            <button type="submit">Send Message</button>
+          </p>
+        </fieldset>
+      </form>
+    </section>
   </body>
 </html>
