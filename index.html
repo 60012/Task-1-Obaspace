@@ -1,77 +1,69 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Obasphere | Get in Touch</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Obasphere - Home</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
-  <body background="login-bg.jpg">
-    <header>
-      <table width="100%" cellpadding="4" cellspacing="0" border="0">
-        <tr>
-          <td align="left" valign="top">
-            <nav aria-label="Site navigation">
-              <p><a href="index.html">Obasphere</a></p>
-            </nav>
-          </td>
-          <td align="right" valign="top">
-            <nav aria-label="Account navigation">
-              <p>
-                <a href="#contact-form">Contact Us</a> |
-                <a href="register.html">Sign Up</a> |
-                <a href="login.html">Sign In</a>
-              </p>
-            </nav>
-          </td>
-        </tr>
-      </table>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <a href="index.html" class="logo">
+          <span class="logo-badge">O</span>
+          <span>Obasphere</span>
+        </a>
+        <nav class="nav">
+          <a href="index.html" class="active">Home</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="register.html">Sign Up</a>
+          <a href="login.html">Sign In</a>
+        </nav>
+      </div>
     </header>
 
-    <section id="contact-form" aria-labelledby="contact-form-title">
-      <h2 id="contact-form-title">Contact Form</h2>
-      <form method="post" autocomplete="on">
-        <fieldset>
-          <legend>Send a Message</legend>
-
-          <p>
-            <label for="contact-name">Full Name</label><br />
-            <input
-              type="text"
-              id="contact-name"
-              name="name"
-              autocomplete="name"
-              required
-            />
+    <main class="main-content">
+      <div class="two-col-layout">
+        <div class="col-left">
+          <h1 class="page-title">Obasphere</h1>
+          <p class="page-subtitle">
+            A simple, secure platform to connect, collaborate, and manage your projects in one place.
           </p>
+          <ul class="info-list">
+            <li>• Organize team conversations, workspaces, and project updates</li>
+            <li>• Clean, fast, and distraction-free interface built for efficiency</li>
+            <li>• Reliable tools to keep your community connected anytime</li>
+          </ul>
+        </div>
 
-          <p>
-            <label for="contact-email">Email Address</label><br />
-            <input
-              type="email"
-              id="contact-email"
-              name="email"
-              autocomplete="email"
-              required
-            />
-          </p>
+        <div class="col-right">
+          <div class="form-card">
+            <h2>Get Started</h2>
+            <p class="card-desc">Choose an option below to continue</p>
 
-          <p>
-            <label for="contact-message">Message</label><br />
-            <textarea
-              id="contact-message"
-              name="message"
-              rows="6"
-              cols="32"
-              minlength="10"
-              required
-            ></textarea>
-          </p>
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+              <a href="login.html" class="btn btn-primary">Sign In</a>
+              <a href="register.html" class="btn btn-secondary">Create New Account</a>
+            </div>
 
-          <p>
-            <button type="submit">Send Message</button>
-          </p>
-        </fieldset>
-      </form>
-    </section>
+            <hr class="divider">
+
+            <div class="form-footer">
+              <p>Need help or have questions? <a href="contact.html">Contact us</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="register.html">Sign Up</a></li>
+        <li><a href="login.html">Sign In</a></li>
+      </ul>
+      <p>&copy; 2026 Obasphere. All rights reserved.</p>
+    </footer>
   </body>
 </html>

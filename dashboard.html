@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard - Obasphere</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="dashboard-header">
+      <div class="dashboard-header-container">
+        <a href="dashboard.html" class="logo">
+          <span class="logo-badge">O</span>
+          <span>Obasphere</span>
+        </a>
+
+        <div class="dashboard-header-right">
+          <span class="user-badge">Signed in as User</span>
+          <a
+            href="login.html"
+            class="btn btn-outline"
+            style="width: auto; padding: 6px 14px; font-size: 13px"
+            >Sign Out</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <div class="dashboard-container">
+      <aside class="dashboard-sidebar">
+        <nav>
+          <ul class="dashboard-nav">
+            <li><a href="dashboard.html" class="active">Overview</a></li>
+            <li><a href="#workspaces">Workspaces</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#messages">Messages</a></li>
+            <li><a href="#settings">Settings</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="dashboard-main">
+        <div class="dashboard-welcome">
+          <div>
+            <h1>Dashboard</h1>
+            <p class="card-desc" style="margin-bottom: 0">
+              Welcome to your Obasphere workspace overview.
+            </p>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-title">Active Projects</div>
+            <div class="stat-number">12</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-title">Team Members</div>
+            <div class="stat-number">28</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-title">Open Tasks</div>
+            <div class="stat-number">19</div>
+          </div>
+        </div>
+
+        <section class="panel-card">
+          <h2>Recent Projects</h2>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Project Name</th>
+                  <th>Workspace</th>
+                  <th>Status</th>
+                  <th>Progress</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Mobile App Redesign</strong></td>
+                  <td>Design Team</td>
+                  <td><span class="badge badge-success">Active</span></td>
+                  <td>85%</td>
+                </tr>
+                <tr>
+                  <td><strong>Web Platform</strong></td>
+                  <td>Engineering</td>
+                  <td><span class="badge badge-progress">In Progress</span></td>
+                  <td>60%</td>
+                </tr>
+                <tr>
+                  <td><strong>Security Audit</strong></td>
+                  <td>Infrastructure</td>
+                  <td><span class="badge badge-success">Completed</span></td>
+                  <td>100%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2026 Obasphere. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

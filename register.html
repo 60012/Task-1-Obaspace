@@ -1,107 +1,148 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Create an Obasphere account." />
-    <title>Obasphere | Sign Up</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create an Account - Obasphere</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
-  <body background="login-bg.jpg">
-    <header>
-      <table width="100%" cellpadding="4" cellspacing="0" border="0">
-        <tr>
-          <td align="left" valign="top">
-            <nav aria-label="Site navigation">
-              <p><a href="index.html">Obasphere</a></p>
-            </nav>
-          </td>
-          <td align="right" valign="top">
-            <nav aria-label="Account navigation">
-              <p>
-                <a href="#contact-form">Contact Us</a> |
-                <a href="register.html">Sign Up</a> |
-                <a href="login.html">Sign In</a>
-              </p>
-            </nav>
-          </td>
-        </tr>
-      </table>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <a href="index.html" class="logo">
+          <span class="logo-badge">O</span>
+          <span>Obasphere</span>
+        </a>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="register.html" class="active">Sign Up</a>
+          <a href="login.html">Sign In</a>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <section aria-labelledby="sign-up-title">
-        <h1 id="sign-up-title">Sign Up</h1>
-        <p>Create your Obasphere account.</p>
-        <p>Already have an account? <a href="login.html">Sign in</a>.</p>
+    <main class="main-content">
+      <div class="center-layout">
+        <div class="form-card">
+          <h2>Create an Account</h2>
+          <p class="card-desc">Sign up to get started with Obasphere</p>
 
-        <form method="post" autocomplete="on">
-          <fieldset>
-            <legend>Create Your Obasphere account.</legend>
+          <form method="get" action="dashboard.html">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first_name"
+                  class="form-input"
+                  placeholder="First name"
+                  required
+                >
+              </div>
 
-            <p>
-              <label for="full-name">Full Name</label><br />
+              <div class="form-group">
+                <label for="surname">Surname</label>
+                <input
+                  type="text"
+                  id="surname"
+                  name="surname"
+                  class="form-input"
+                  placeholder="Surname"
+                  required
+                >
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="other-name">Other Name (Optional)</label>
               <input
                 type="text"
-                id="full-name"
-                name="name"
-                autocomplete="name"
-                minlength="2"
-                required
-              />
-            </p>
+                id="other-name"
+                name="other_name"
+                class="form-input"
+                placeholder="Middle / other name"
+              >
+            </div>
 
-            <p>
-              <label for="register-email">Email Address</label><br />
+            <div class="form-group">
+              <label for="register-email">Email Address</label>
               <input
                 type="email"
                 id="register-email"
                 name="email"
-                autocomplete="email"
-                inputmode="email"
+                class="form-input"
+                placeholder="name@example.com"
                 required
-              />
-            </p>
+              >
+            </div>
 
-            <p>
-              <label for="phone">Phone Number</label><br />
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                autocomplete="tel"
-                inputmode="tel"
-              />
-            </p>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <div class="phone-group">
+                <select id="country-code" name="country_code" class="country-select" title="Country code">
+                  <option value="+234" selected>+234 (NG)</option>
+                  <option value="+1">+1 (US)</option>
+                  <option value="+1">+1 (CA)</option>
+                  <option value="+44">+44 (UK)</option>
+                  <option value="+233">+233 (GH)</option>
+                  <option value="+27">+27 (ZA)</option>
+                  <option value="+254">+254 (KE)</option>
+                  <option value="+91">+91 (IN)</option>
+                  <option value="+49">+49 (DE)</option>
+                  <option value="+33">+33 (FR)</option>
+                  <option value="+61">+61 (AU)</option>
+                  <option value="+971">+971 (AE)</option>
+                  <option value="+86">+86 (CN)</option>
+                  <option value="+55">+55 (BR)</option>
+                  <option value="+81">+81 (JP)</option>
+                  <option value="+20">+20 (EG)</option>
+                </select>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  class="form-input phone-input"
+                  placeholder="Phone number"
+                  required
+                >
+              </div>
+            </div>
 
-            <p>
-              <label for="register-password">Password</label><br />
+            <div class="form-group">
+              <label for="register-password">Password</label>
               <input
                 type="password"
                 id="register-password"
                 name="password"
-                autocomplete="new-password"
+                class="form-input"
+                placeholder="At least 8 characters"
                 minlength="8"
                 required
-              />
-            </p>
+              >
+            </div>
 
-            <p>
-              <input
-                type="checkbox"
-                id="terms"
-                name="terms"
-                value="accepted"
-                required
-              />
-              <label for="terms">I agree to the Obasphere terms.</label>
-            </p>
+            <button type="submit" class="btn btn-secondary">Create Account</button>
 
-            <p>
-              <button type="submit">Create Account</button>
-            </p>
-          </fieldset>
-        </form>
-      </section>
+            <hr class="divider">
+
+            <div class="form-footer">
+              <p>Already have an account? <a href="login.html">Sign in</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
     </main>
+
+    <footer class="footer">
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="register.html">Sign Up</a></li>
+        <li><a href="login.html">Sign In</a></li>
+      </ul>
+      <p>&copy; 2026 Obasphere. All rights reserved.</p>
+    </footer>
   </body>
 </html>

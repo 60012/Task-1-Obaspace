@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sign In - Obasphere</title>
+    <title>Contact Us - Obasphere</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -15,9 +15,9 @@
         </a>
         <nav class="nav">
           <a href="index.html">Home</a>
-          <a href="contact.html">Contact Us</a>
+          <a href="contact.html" class="active">Contact Us</a>
           <a href="register.html">Sign Up</a>
-          <a href="login.html" class="active">Sign In</a>
+          <a href="login.html">Sign In</a>
         </nav>
       </div>
     </header>
@@ -25,26 +25,38 @@
     <main class="main-content">
       <div class="two-col-layout">
         <div class="col-left">
-          <h1 class="page-title">Obasphere</h1>
-          <p class="page-subtitle">Sign in to your account and stay connected with your team and projects.</p>
+          <h1 class="page-title">Contact Us</h1>
+          <p class="page-subtitle">Have questions or need assistance? Reach out to our team and we'll get back to you promptly.</p>
           <ul class="info-list">
-            <li>• Access your collaborative workspaces and messages</li>
-            <li>• Manage projects, tasks, and team updates</li>
-            <li>• Secure authentication and fast performance</li>
+            <li>• Questions about our platform and features</li>
+            <li>• Technical support and account assistance</li>
+            <li>• General feedback and partnership inquiries</li>
           </ul>
         </div>
 
         <div class="col-right">
           <div class="form-card">
-            <h2>Sign In</h2>
-            <p class="card-desc">Enter your details to access your account</p>
+            <h2>Send a Message</h2>
+            <p class="card-desc">Fill out the form below to get in touch</p>
 
-            <form method="get" action="dashboard.html">
+            <form method="post" action="#">
               <div class="form-group">
-                <label for="login-email">Email or Username</label>
+                <label for="contact-name">Full Name</label>
+                <input
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  class="form-input"
+                  placeholder="Your full name"
+                  required
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Email Address</label>
                 <input
                   type="email"
-                  id="login-email"
+                  id="contact-email"
                   name="email"
                   class="form-input"
                   placeholder="name@example.com"
@@ -53,27 +65,18 @@
               </div>
 
               <div class="form-group">
-                <label for="login-password">Password</label>
-                <input
-                  type="password"
-                  id="login-password"
-                  name="password"
+                <label for="contact-message">Message</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
                   class="form-input"
-                  placeholder="Enter your password"
+                  rows="4"
+                  placeholder="Write your message here..."
                   required
-                >
+                ></textarea>
               </div>
 
-              <div class="checkbox-group">
-                <input type="checkbox" id="remember-me" name="remember" value="yes">
-                <label for="remember-me">Remember me</label>
-              </div>
-
-              <button type="submit" class="btn btn-primary">Sign In</button>
-
-              <div class="forgot-password-wrap">
-                <a href="forgot-password.html">Forgot password?</a>
-              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
 
               <hr class="divider">
 
